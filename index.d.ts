@@ -11,7 +11,7 @@ export interface InputData {
 }
 
 export default class InputDataDecoder {
-  constructor(abi: string | Interface['abi']);
+  constructor(abi: any);
 
   decodeConstructor(data: Buffer | string): InputData;
 
